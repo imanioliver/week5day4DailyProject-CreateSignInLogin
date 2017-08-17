@@ -80,9 +80,9 @@ router.post('/login', function(req, res){
           password: req.body.password
         };
 
-        res.render('results', obj);
+        res.render('results', {obj, user:user});
     } else {
-        res.redirect("/dupecheck")
+        res.redirect("/login")
     }
       });
 
