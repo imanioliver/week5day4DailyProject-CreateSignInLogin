@@ -17,6 +17,13 @@
             {{{yield}}}
 
         </div>
+        {{#errors}}
 
+        <div class="errorContainer">
+            {{.}} <br>    
+        </div>
+
+
+        {{/errors}}
     </body>
 </html>

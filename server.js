@@ -21,7 +21,7 @@ app.use(expressValidator());
 app.use(morgan('dev'));
 
 app.use(session({
-    secret: "youMOBthenyouBOB",
+    secret: "yoursecret",
     resave: false,
     saveUnitialized: false
 }));
